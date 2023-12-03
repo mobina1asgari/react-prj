@@ -1,0 +1,92 @@
+.cartStyle {
+    padding: 10px 35px;
+    z-index: 10;
+    width: 340px;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    right: 120px;
+    top: 73px;
+    opacity: 0;
+    visibility: hidden;
+    transform: rotateX(90deg);
+    transform-origin: center top 0;
+    transition: all .5s ease 0s;
+}
+
+.shopBtn {
+    border: 1px solid #333;
+    color: #010101;
+    font-size: 16px;
+    line-height: 1;
+    padding: 15px 50px 21px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+    background-color: unset;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.shopBtn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a749ff;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.shopBtn:hover::before {
+    transform: scaleX(1);
+}
+
+.shopBtn:hover{
+    color: white;
+    border: 1px solid #a749ff;
+}
+.img{
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+.cartDiv{
+    padding-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: -15px;
+    padding-right: 15px;
+}
+.close{
+    background: none;
+    border: 0;
+    color: #a749ff;
+    font-size: 16px;
+    padding: 0;
+    position: relative;
+    left: 5px;
+}
+.title{
+    max-width: 15ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.title:hover{
+    color: #a749ff;
+}
+.shopTotal{
+    margin:  17px 0 ;
+}

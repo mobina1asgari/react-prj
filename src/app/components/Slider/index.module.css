@@ -1,0 +1,55 @@
+.slider {
+    background-color: #f0e0ff;
+}
+
+.shopBtn {
+    border: 1px solid #333;
+    color: #010101;
+    font-size: 16px;
+    line-height: 1;
+    padding: 19px 50px 21px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+    background-color: unset;
+}
+
+.shopBtn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a749ff;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.shopBtn:hover::before {
+    transform: scaleX(1);
+}
+
+.shopBtn:hover{
+    color: white;
+    border: 1px solid #a749ff;
+}
+
+.slideTitle {
+    font-size: 60px;
+    color: #1D1C21;
+    font-weight: bold;
+}
+
+.leftslide1 {
+    margin-left: 140px;
+    text-align: center;
+}

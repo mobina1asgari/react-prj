@@ -1,0 +1,11 @@
+.skeletonImg{
+    width: 400px; 
+    height: 500px;
+    margin-left: 65px; 
+}
+.info{
+    margin-left: 300px;
+}
+.skeletonPadding{
+    padding: 100px 0;
+}

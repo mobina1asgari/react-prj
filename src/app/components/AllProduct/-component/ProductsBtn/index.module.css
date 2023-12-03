@@ -1,0 +1,18 @@
+.filterStyle {
+    padding: 30px 0 45px;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+  }
+  
+  .filter {
+    color: #555 !important;
+    transition: all .3s ease 0s;
+        font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .filter:hover {
+    color: black !important;
+  }

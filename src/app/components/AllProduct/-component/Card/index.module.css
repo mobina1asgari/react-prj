@@ -1,0 +1,60 @@
+.itemImg {
+    width: 275px;
+    height: 275px;
+    margin: 40px 5px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.btn {
+    margin-left: 60px;
+    background-color: #B7D5F8;
+    color: #0072F5;
+    cursor: pointer;
+    border: 1px solid #B7D5F8;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.title {
+    text-align: center;
+}
+
+.cardTitle {
+    font-size: 18px !important;
+    max-width: 22ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconStyle {
+    background-color: #f0e0ff;
+}
+
+.icons {
+    position: absolute;
+    transition: all 0.5s ease-out !important;
+    -webkit-transition: all 0.5s ease-out !important;
+    -moz-transition: all 0.5s ease-out !important;
+    -ms-transition: all 0.5s ease-out !important;
+    -o-transition: all 0.5s ease-out !important;
+    top: 30px;
+    right: -100px;
+}
+.cardStyle{
+        position: relative;
+    overflow: hidden;
+}
+.cardStyle:hover  .icons {
+       right:  0;
+
+}
