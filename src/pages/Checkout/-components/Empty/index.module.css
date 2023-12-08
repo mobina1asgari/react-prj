@@ -1,0 +1,24 @@
+.cartShopping{
+    font-size: 140px;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.tabelBtn{
+    background-color: #363f4d;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: white !important;
+    padding: 12px 30px;
+    border: none;
+    transition: all .3s ease 0s;
+}
+
+.tabelBtn:hover{
+    background-color: #a749ff;
+    color: white;
+}
+.emptyDiv{
+    padding: 120px 0;
+    text-align: center;
+}

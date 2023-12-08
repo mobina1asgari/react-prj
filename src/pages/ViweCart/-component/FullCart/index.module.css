@@ -1,0 +1,70 @@
+.viwe{
+    padding: 100px 0;
+}
+.img{
+    width: 108px;
+    height: 144px;
+    object-fit: contain;
+}
+.tdItem{
+    padding: 21px 45px !important;
+    line-height: 9;
+}
+.table{
+    border: 1px solid #ebebeb;
+    text-align: center;
+}
+.tableTh{
+    padding-top: 21px !important;
+    padding-bottom: 21px !important;
+}
+.title{
+    overflow: hidden;
+    text-wrap: nowrap;
+    max-width: 20ch;
+    text-overflow: ellipsis;
+}
+.title:hover{
+    color: #a749ff;
+}
+.btn{
+    background: none;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+}
+.input{
+    border: 1px solid #e1e1e1;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+}
+.tdInput{
+    display: flex;
+    border: 0;
+    align-items: stretch;
+    position: relative;
+    top: 70px;
+    justify-content: center;
+}
+
+.tabelBtn{
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 18px 63px 17px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    transition: all .3s ease 0s;
+}
+
+.tabelBtn:hover{
+    background-color: #a749ff;
+    color: white;
+}
+.btnDiv{
+    padding: 30px 0 55px;
+}

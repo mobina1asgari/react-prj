@@ -49,15 +49,51 @@ function Layout({ children }) {
     }
     setLength(length - 1);
   };
-  useEffect(()=>{
-    const total=cart.reduce((prev,current)=>{
-      return prev + current.price*current.qty
-    },0)
-    setTotal(total)
-  })
+
+  useEffect(() => {
+    const total = cart.reduce((prev, current) => {
+      return prev + current.price * current.qty;
+    }, 0);
+    setTotal(total);
+  });
+
+  
+
+  function pluseHandler(product) {
+    addCart(product);
+  }
+  function minusHandler(product) {
+    const exist = cart.find((item) => item.id === product.id);
+    if (exist) {
+      const newCart = cart.map((item) => {
+        if (item.id === product.id && item.qty>2) {
+          return { ...item, qty: exist.qty - 1 };
+        }else{
+          return { ...item, qty: 1 };
+        }
+      });
+      setCart(newCart);
+    }
+  }
+  const clearCart=()=> {
+    setCart([])
+    setLength(0)
+  }
+
+  
   return (
     <CartContext.Provider
-      value={{ cart, addCart, removeCart, cartFlag, length ,total}}
+      value={{
+        cart,
+        clearCart,
+        addCart,
+        removeCart,
+        cartFlag,
+        length,
+        total,
+        minusHandler,
+        pluseHandler,
+      }}
     >
       <ProductsContext.Provider
         value={{

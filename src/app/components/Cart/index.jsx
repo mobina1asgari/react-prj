@@ -3,6 +3,7 @@ import styles from "./index.module.css";
 import "./index.css";
 import CartContext from "@/contexts/CartContext";
 import CartDetail from "./-components/CartDetail";
+import Link from "next/link";
 
 const Cart = forwardRef(function Cart({ props }, ref) {
   const { cart, cartFlag ,total} = useContext(CartContext);
@@ -22,10 +23,11 @@ const Cart = forwardRef(function Cart({ props }, ref) {
           </div>
           <div className={styles.shopTotal}>
             <h4 className="fs-6 d-flex justify-content-between">
-              Total : <span>€ {total}</span>
+              Total : <span>€ {parseFloat(total).toFixed(2) }</span>
             </h4>
           </div>
-          <button className={styles.shopBtn}>view cart</button>
+          <Link href={`/ViweCart/`} className={`mb-2 ${styles.shopBtn}`}>view cart</Link>
+          <Link href={`/Checkout/`} className={styles.shopBtn}>CHECKOUT</Link>
         </>
       ) : (
         <div>

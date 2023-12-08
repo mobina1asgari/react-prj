@@ -3,11 +3,6 @@ import style from "./index.module.css";
 import CartContext from "@/contexts/CartContext";
 
 function ProductId({ product }) {
-  const [num, setNum] = useState(1);
-
-  const ChangeHandler = (ev) => {
-    setNum(ev.target.value);
-  };
 
   const {addCart}=useContext(CartContext)
 
@@ -23,14 +18,6 @@ function ProductId({ product }) {
           <p>{product.description}</p>
         </div>
         <div className={`d-flex ${style.border} py-4 my-4`}>
-          <input
-            type="number"
-            min={1}
-            max={40}
-            value={num}
-            onChange={ChangeHandler}
-            className={`${style.input}`}
-          />
           <button
             className={` ${style.shopBtn}`}
             onClick={()=>addCart(product)}

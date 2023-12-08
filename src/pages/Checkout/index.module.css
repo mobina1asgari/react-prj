@@ -1,0 +1,5 @@
+.CheckoutDiv{
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-around;
+}

@@ -19,7 +19,7 @@ function CartDetail({ item }) {
           <h4 className={`fs-6 ${styles.title}`}>{item.title}</h4>
         </Link>
         <h6 style={{ fontSize: 13 }}>Qty : {item.qty}</h6>
-        <span style={{ fontSize: 14 }}>${item.price} </span>
+        <span style={{ fontSize: 14 }}>€{item.price * item.qty} </span>
       </div>
       <div>
         <button className={styles.close}>

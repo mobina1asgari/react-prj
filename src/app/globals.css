@@ -5,7 +5,10 @@ a{
   text-decoration: none !important;
   color: unset !important;
 }
-
+ul{
+  list-style: none;
+  padding: 0;
+}
 .fixed{
   position: fixed;
   width: 100%;
@@ -33,3 +36,4 @@ a{
     transform: translateZ(0);
 }
 }
+

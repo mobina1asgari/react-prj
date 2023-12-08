@@ -1,5 +1,3 @@
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 import styles from "./index.module.css";
 import Slide1 from "./-component/Slide1";
 import Slide2 from "./-component/Slide2";
